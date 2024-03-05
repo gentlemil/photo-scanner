@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Scanner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #fbab7e;
+        background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>title</h1>
+      <div class="container"></div>
+    </section>
+
+    <div class="container pt-4" style="max-width: 500px">
+      <div class="card">
+        <div class="card-body text-center">
+          <p>Enter the address of the page where you want to find images</p>
+
+          <form action="/scan" method="POST">
+            <input
+              type="text"
+              class="form-control"
+              name="url"
+              placeholder="https://..."
+            />
+            <button class="btn btn-info mt-2">Scan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
